@@ -19,7 +19,7 @@ def now_serving(katz_deli)
 
 end #method
 
-
-puts "Currently serving Logan." && katz_deli.delete_at(0) if katz_deli.length >= 1
-puts "Currently serving #{other_deli[0]}." && katz_deli.delete_at(0)
- # && katz_deli.delete_at(0)
+#
+# puts "Currently serving Logan." && katz_deli.delete_at(0) if katz_deli.length >= 1
+# puts "Currently serving #{other_deli[0]}." && katz_deli.delete_at(0)
+#  # && katz_deli.delete_at(0)

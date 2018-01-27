@@ -20,6 +20,7 @@ def now_serving(katz_deli)
       puts "Currently serving Logan."
       katz_deli.delete_at(0)
       puts "Currently serving #{name}."
+      katz_deli.delete_at(0)
     end #each
 end #method
 

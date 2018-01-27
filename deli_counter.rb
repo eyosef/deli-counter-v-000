@@ -17,7 +17,7 @@ end
 def now_serving(katz_deli)
     puts "There is nobody waiting to be served!" if katz_deli.length == 0
     katz_deli = [Avi Spencer]
-    katz_deli.split(",")
+    katz_deli.split(" , ")
     puts "Currently serving ."
 end #method
 

@@ -17,7 +17,8 @@ end
 def now_serving(katz_deli)
     puts "There is nobody waiting to be served!" if katz_deli.length == 0
 
-    katz_deli.each do |name|
+    # katz_deli.each do |name|
+      katz_deli.push(name)
       puts "Currently serving #{name}." if katz_deli.length >= 1
 
     end #each

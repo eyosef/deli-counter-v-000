@@ -1,0 +1,50 @@
+require 'pry'
+def line(katz_deli)
+    return puts "The line is currently empty." if katz_deli.length == 0
+    names = []
+    katz_deli.each.with_index do |name, index|
+      names << "#{index+1}. #{name}"
+    end #each
+    puts "The line is currently: " + names.join(" ")
+end #method
+
+
+def take_a_number(katz_deli, name)
+    katz_deli.push(name)
+    katz_deli.reverse.each_with_index { |name,index| puts "Welcome, #{name}. You are number #{index + 1} in line."}
+end
+
+# counter = 0
+# while counter < katz_deli.length
+#   katz_deli.push(name)
+#   counter += 1
+#   return puts katz_deli
+# end #while loop
+
+
+# def now_serving(deli)
+#     return puts "There is nobody waiting to be served!" if deli.length == 0
+#   deli.each do |name|
+#     puts "Currently serving #{name}."
+#     deli.shift
+#   end #loop
+#     return deli
+# end
+
+
+def now_serving(deli)
+  return puts "There is nobody waiting to be served!" if deli.length == 0
+  counter = 0
+  while counter < deli.length
+    yield (deli[counter])
+    counter += 1
+
+    now_serving(deli) do |name|
+      if name.length >= 1
+        puts "Currently serving #{name}."
+      end # if conditional
+      deli
+    end #do
+  end #while
+end #method
+end

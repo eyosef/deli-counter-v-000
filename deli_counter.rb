@@ -20,7 +20,7 @@ def now_serving(katz_deli)
     katz_deli.each do |name|
       puts "Currently serving #{name}." if katz_deli.length >= 1
 
-
+    end #each
 end #method
 
 #

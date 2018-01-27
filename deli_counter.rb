@@ -16,7 +16,7 @@ end
 
 def now_serving(katz_deli)
     puts "There is nobody waiting to be served!" if katz_deli.length == 0
-    "Currently serving Logan."
+    puts "Currently serving Logan."
     katz_deli.each do |name|
       puts "Currently serving #{name}."
       katz_deli.delete_at(0)

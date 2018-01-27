@@ -20,7 +20,7 @@ def now_serving(katz_deli)
     other_deli = %w(Logan Avi Spencer)
     other_deli.each do |name|
       puts "Currently serving #{other_deli[0]}." if katz_deli.length >= 1
-      katz_deli.delete_at(0)
+
     end #each
 end #method
 

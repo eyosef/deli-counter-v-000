@@ -17,7 +17,7 @@ end
 def now_serving(katz_deli)
     puts "There is nobody waiting to be served!" if katz_deli.length == 0
     puts "Currently serving Logan." if katz_deli.length >= 0
-    other_deli = [%w(Avi Spencer)]
+    other_deli = %w(Avi Spencer)
     puts "Currently serving #{name}."
 end #method
 

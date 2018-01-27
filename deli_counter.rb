@@ -19,6 +19,7 @@ def now_serving(katz_deli)
     katz_deli.each do |name|
       puts "Currently serving #{name}."
       katz_deli.delete_at(0)
+    end #each
 end #method
 
 #
